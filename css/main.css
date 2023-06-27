@@ -324,6 +324,12 @@ body {
     gap: 40px;
   }
 }
+@media screen and (max-width: 576px) {
+  .navigation {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 .nav {
   display: flex;
@@ -390,6 +396,18 @@ body {
     color: #fff;
     background: #9C69E2;
     border-radius: 5px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .menu {
+    flex-direction: column;
+    width: 60vw;
+    height: 30vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu {
+    top: 70px;
   }
 }
 
@@ -500,12 +518,16 @@ body {
 }
 @media screen and (max-width: 768px) {
   .screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-direction: column;
+    max-height: calc(100vh - 100px);
     max-width: 100%;
     padding-bottom: 50px;
     background-image: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    text-align: center;
   }
   .screen__title {
     font-size: 60px;
@@ -516,11 +538,6 @@ body {
     display: block;
     overflow: visible;
   }
-}
-@media screen and (max-width: 768px) {
-  .screen {
-    text-align: center;
-  }
   .screen__text {
     align-items: center;
     max-width: 100%;
@@ -528,6 +545,18 @@ body {
   }
   .screen__descr {
     max-width: 70%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .screen__text {
+    padding-bottom: 20px;
+  }
+  .screen__title {
+    font-size: 40px;
+    max-width: 100%;
+  }
+  .screen__descr {
+    font-size: 14px;
   }
 }
 
@@ -594,6 +623,17 @@ body {
     max-width: 90%;
     padding-bottom: 30px;
   }
+}
+@media screen and (max-width: 576px) {
+  .about__title {
+    font-size: 20px;
+  }
+  .about__descr {
+    font-size: 14px;
+  }
+}
+.about__img {
+  max-width: 60%;
 }
 
 .features {
@@ -970,13 +1010,18 @@ body {
   fill: #fff;
   color: #fff;
 }
+@media screen and (max-width: 576px) {
+  .buttons {
+    max-width: 90%;
+  }
+}
 
 .company {
   display: flex;
   justify-content: space-between;
   padding-bottom: 109px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .company {
     flex-direction: column;
   }
@@ -1018,7 +1063,7 @@ body {
   line-height: 1.8;
   letter-spacing: 0.16px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .info {
     margin-right: 100px;
     margin-bottom: 30px;
@@ -1055,6 +1100,7 @@ body {
 @media screen and (max-width: 768px) {
   .footer-nav {
     margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1103,7 +1149,6 @@ body {
 .media__instagram:hover > svg {
   fill: #C13584;
 }
-
 .suptitle {
   margin-bottom: 120px;
 }
